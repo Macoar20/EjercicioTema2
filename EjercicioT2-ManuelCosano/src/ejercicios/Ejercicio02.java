@@ -3,17 +3,21 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio02 {
+	/* He realizado diversas pruebas, entre ellas encontramos:
+	* He probado con mi propio DNI, que posee la letra R, y el mensaje se ha mostrado correctamente 
+	* 
+	*/
 
 	public static void main(String[] args) {
-		
+		//Creamos la variable que nos permitirá introducir el DNI
 		int dni;
-		
+		//Creamos el escáner con el que leeremos la variable más adelante
 		Scanner ma = new Scanner(System.in);
-		
+		//Le pedimos al usuario que introduzca su número de DNI pero sin la letra
 		System.out.println("Introduzca su número de DNI sin la letra");
-		
+		//Hacemos que el usuario pueda introducir su número de DNI
 		dni = ma.nextInt();
-		
+		//Mediante este switch evaluaremos todos los casos posibles, y esto lo haremos diviendo el número del DNI entre 23, ya que en función del resto que obtengamos, la letra del DNI será una u otra
 		switch (dni%23) {
 		case 0:
 			System.out.println("La letra que posee su DNI es la letra T" );
@@ -84,10 +88,11 @@ public class Ejercicio02 {
 		case 22:
 			System.out.println("La letra que posee su DNI es la letra E" );
 		break;
-		
+		//Tras poner todos los casos cerramos el último, y nuestro switch debería funcionar si lo hacemos todo correctamente
 			
 		}
-		ma.close();
+		//Cerramos el escáner
+		ma.close(); 
 	}
 
 }
