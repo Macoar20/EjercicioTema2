@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio02 {
 	/* He realizado diversas pruebas, entre ellas encontramos:
 	* He probado con mi propio DNI, que posee la letra R, y el mensaje se ha mostrado correctamente 
-	* 
+	* He probado con el DNI de mi compañero Mati, todo correcto
 	*/
 
 	public static void main(String[] args) {
