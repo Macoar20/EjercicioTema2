@@ -11,7 +11,7 @@ public class Básico10 {
 		double precio2;
 		System.out.println("Dame un precio");
 		precio1 = ma.nextInt();
-		precio2 = precio1 + IVA /100 * precio1;
+		precio2 = precio1 * IVA /100 + precio1;
 		System.out.println("El precio con el IVA aplicado será: "+ precio2);
 		ma.close();
 
